@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ol>
+    {% for category in object_list %}
+    <li>{{ category }}</li>
+    {% endfor %}
+</ol>
+{% endblock content %}
