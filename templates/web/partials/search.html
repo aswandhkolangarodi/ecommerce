@@ -1,0 +1,97 @@
+{% load static %}
+ <!--Search-->
+ <div class="search-parent iconset">
+    <div class="site-search" title="Search">
+        <a href="#;" class="search-icon clr-none" data-bs-toggle="offcanvas" data-bs-target="#search-drawer"><i class="hdr-icon icon anm anm-search-l"></i></a>
+    </div>
+    <div class="search-drawer offcanvas offcanvas-top" tabindex="-1" id="search-drawer">
+        <div class="container">
+            <div class="search-header d-flex-center justify-content-between mb-3">
+                <h3 class="title m-0">What are you looking for?</h3>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="search-body">
+                <form class="form minisearch" id="header-search" action="#" method="get">
+                    <!--Search Field-->
+                    <div class="d-flex searchField">
+                        <div class="search-category">
+                            <select class="rgsearch-category rounded-end-0">
+                                <option value="0">All Categories</option>
+                                <option value="1">- All</option>
+                                <option value="2">- Fashion</option>
+                                <option value="3">- Shoes</option>
+                                <option value="4">- Electronic</option>
+                                <option value="5">- Jewelry</option>
+                                <option value="6">- Vegetables</option>
+                                <option value="7">- Furniture</option>
+                                <option value="8">- Accessories</option>
+                            </select>
+                        </div>
+                        <div class="input-box d-flex fl-1">
+                            <input type="text" class="input-text border-start-0 border-end-0" placeholder="Search for products..." value="" />
+                            <button type="submit" class="action search d-flex-justify-center btn rounded-start-0"><i class="icon anm anm-search-l"></i></button>
+                        </div>
+                    </div>
+                    <!--End Search Field-->
+                    <!--Search popular-->
+                    <div class="popular-searches d-flex-justify-center mt-3">
+                        <span class="title fw-600">Trending Now:</span>
+                        <div class="d-flex-wrap searches-items">
+                            <a class="text-link ms-2" href="#">T-Shirt,</a>
+                            <a class="text-link ms-2" href="#">Shoes,</a>
+                            <a class="text-link ms-2" href="#">Bags</a>
+                        </div>
+                    </div>
+                    <!--End Search popular-->
+                    <!--Search products-->
+                    <div class="search-products">
+                        <ul class="items g-2 g-md-3 row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+                            <li class="item empty w-100 text-center text-muted d-none">You don't have any items in your search.</li>
+                            <li class="item">                                                       
+                                <div class="mini-list-item d-flex align-items-center w-100 clearfix">
+                                    <div class="mini-image text-center"><a class="item-link" href="product-layout1.html"><img class="blur-up lazyload" data-src="{% static 'web/assets/images/products/product1-120x170.jpg' %}" src="{% static 'web/assets/images/products/product1-120x170.jpg' %}" alt="image" title="product" width="120" height="170" /></a></div>
+                                    <div class="ms-3 details text-left">
+                                        <div class="product-name"><a class="item-title" href="product-layout1.html">Oxford Cuban Shirt</a></div>
+                                        <div class="product-price"><span class="old-price">$114.00</span><span class="price">$99.00</span></div>
+                                        <div class="product-review d-flex align-items-center justify-content-start">
+                                            <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
+                                            <span class="caption hidden ms-2">3 reviews</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="mini-list-item d-flex align-items-center w-100 clearfix">
+                                    <div class="mini-image text-center"><a class="item-link" href="product-layout1.html"><img class="blur-up lazyload" data-src="{% static 'web/assets/images/products/product2-120x170.jpg' %}" src="{% static 'web/assets/images/products/product2-120x170.jpg' %}" alt="image" title="product" width="120" height="170" /></a></div>
+                                    <div class="ms-3 details text-left">
+                                        <div class="product-name"><a class="item-title" href="product-layout1.html">Cuff Beanie Cap</a></div>
+                                        <div class="product-price"><span class="price">$128.00</span></div>
+                                        <div class="product-review d-flex align-items-center justify-content-start">
+                                            <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i>
+                                            <span class="caption hidden ms-2">9 reviews</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="mini-list-item d-flex align-items-center w-100 clearfix">
+                                    <div class="mini-image text-center"><a class="item-link" href="product-layout1.html"><img class="blur-up lazyload" data-src="{% static 'web/assets/images/products/product3-120x170.jpg' %}" src="{% static 'web/assets/images/products/product3-120x170.jpg' %}" alt="image" title="product" width="120" height="170" /></a></div>
+                                    <div class="ms-3 details text-left">
+                                        <div class="product-name"><a class="item-title" href="product-layout1.html">Flannel Collar Shirt</a></div>
+                                        <div class="product-price"><span class="price">$99.00</span></div>
+                                        <div class="product-review d-flex align-items-center justify-content-start">
+                                            <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i>
+                                            <span class="caption hidden ms-2">30 reviews</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--End Search products-->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Search-->
